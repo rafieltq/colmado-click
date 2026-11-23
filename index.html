@@ -1,11 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Marketing digital para colmados en República Dominicana. Redes sociales, promociones y conexión con tu barrio.">
+    <title>Colmado Click | Marketing para colmados</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="contenedor" aria-label="Principal">
+            <a href="index.html">Colmado Click</a>
+            <ul>
+                <li><a href="index.html" aria-current="page">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="contenedor">
+                <h1>Tu colmado, en boca de todo el barrio.</h1>
+                <p>Marketing para colmados de República Dominicana. Te ayudamos a mostrar lo que vendes, compartir tus ofertas y conectar con más vecinos.</p>
+                <a class="boton" href="#contacto">Hablemos de tu colmado</a>
+            </div>
+        </section>
+
+        <section id="servicios">
+            <div class="contenedor">
+                <h2>Servicios para crecer contigo</h2>
+                <div class="columnas">
+                    <div>
+                        <h3>Presencia digital</h3>
+                        <ul>
+                            <li>Creación de perfiles en redes sociales.</li>
+                            <li>Fotos de tus productos y tu negocio.</li>
+                            <li>Publicaciones con la voz de tu colmado.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Promociones</h3>
+                        <ul>
+                            <li>Diseño de ofertas y combos.</li>
+                            <li>Campañas para fechas especiales.</li>
+                            <li>Anuncios dirigidos a tu zona.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Conexión con tus clientes</h3>
+                        <ul>
+                            <li>Configuración de WhatsApp Business.</li>
+                            <li>Catálogo digital de productos.</li>
+                            <li>Ideas para que tus clientes vuelvan.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios">
+            <div class="contenedor">
+                <h2>La voz del colmado</h2>
+                <p>Testimonios de ejemplo para mostrar el diseño; no son opiniones de clientes reales.</p>
+                <div class="columnas">
+                    <blockquote>
+                        <p>“Ahora nuestros vecinos pueden ver las ofertas sin tener que pasar por el colmado.”</p>
+                    </blockquote>
+                    <blockquote>
+                        <p>“El catálogo nos ayuda a enseñar lo que tenemos por WhatsApp.”</p>
+                    </blockquote>
+                    <blockquote>
+                        <p>“Las publicaciones mantienen al barrio al día con nuestras novedades.”</p>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="contenedor">
+                <h2>Cuéntanos de tu colmado</h2>
+                <p>El primer paso es conocer tu negocio y lo que quieres lograr.</p>
+                <form aria-describedby="aviso-formulario">
+                    <label for="nombre">Tu nombre</label>
+                    <input id="nombre" name="nombre" autocomplete="name" required>
+
+                    <label for="colmado">Nombre del colmado</label>
+                    <input id="colmado" name="colmado" autocomplete="organization" required>
+
+                    <label for="telefono">Teléfono o WhatsApp</label>
+                    <input type="tel" id="telefono" name="telefono" autocomplete="tel" required>
+
+                    <label for="mensaje">¿Cómo podemos ayudarte?</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                    <p id="aviso-formulario">Formulario de muestra. El envío todavía no está habilitado.</p>
+                    <button type="submit" disabled>Enviar consulta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor columnas">
+            <div>
+                <h2>Colmado Click</h2>
+                <p>Marketing que conecta con tu gente.<br>República Dominicana.</p>
+                <ul>
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                </ul>
+            </div>
+            <div class="redes">
+                <h2>Redes sociales</h2>
+                <p>Enlaces de muestra.</p>
+                <ul>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.tiktok.com/">TikTok</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
