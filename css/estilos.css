@@ -1,0 +1,176 @@
+:root {
+    /* Crema: base (60 %). Verde: secundario (30 %). Naranja: acento (10 %). */
+    --base: #EEDFC7;
+    --secundario: #607938;
+    --acento: #CE7F20;
+    --texto: #533416;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--base);
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    width: 70%;
+    margin-inline: auto;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 64rem;
+    margin-inline: auto;
+    padding: 1.5rem;
+}
+
+header,
+footer,
+#testimonios {
+    background: var(--secundario);
+    color: var(--base);
+}
+
+footer {
+    min-height: 20rem;
+    padding-block: 3rem;
+}
+
+footer .redes {
+    grid-column: 3;
+}
+
+nav,
+nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+nav {
+    justify-content: space-between;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-block: 2rem;
+}
+
+h1, h2, h3, p, ul, ol {
+    margin-block: 0 1rem;
+}
+
+h1 {
+    max-width: 20ch;
+    font-size: clamp(2rem, 6vw, 4rem);
+    line-height: 1.15;
+}
+
+ul,
+ol {
+    padding-inline-start: 1.5rem;
+}
+
+li + li {
+    margin-top: 0.5rem;
+}
+
+nav li {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration-color: var(--acento);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
+}
+
+.columnas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+blockquote {
+    margin: 0;
+    padding-left: 1rem;
+    border-left: 3px solid var(--acento);
+}
+
+form {
+    max-width: 32rem;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    margin-block: 0.25rem 1rem;
+    padding: 0.75rem;
+    border: 1px solid var(--secundario);
+    background: var(--base);
+    color: var(--texto);
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.boton,
+button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border: 0;
+    background: var(--acento);
+    color: var(--texto);
+    font: inherit;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 4px;
+}
+
+@media (max-width: 40rem) {
+    .columnas {
+        grid-template-columns: 1fr;
+    }
+
+    footer .redes {
+        grid-column: auto;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
